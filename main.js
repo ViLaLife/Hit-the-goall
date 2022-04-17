@@ -53,10 +53,8 @@ function my_keydown(e)
 {
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
-	/* Check the coordinates of the ball and hole images to finish the game. 
-	And id coordinates matches them remove ball image, 
-	display "GAME OVER!!!" 
-	and make canvas border 'red'. */
+    ball_obj.scaleToWidth(50);
+	ball_obj.scaleToHeight(50);
 
 	if((ball_x == hole_x)&&(ball_y == hole_y)){
 
